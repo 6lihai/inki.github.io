@@ -1,1 +1,1 @@
-# yinqi.github.io
+# inki.github.io
