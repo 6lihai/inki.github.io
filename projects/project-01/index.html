@@ -1,70 +1,251 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project 01 - YINQI</title>
   <style>
-    body {
-      font-family: Helvetica, Arial, sans-serif;
-      padding: 80px;
-      max-width: 900px;
-      margin: 0 auto;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+      color: #1a1a1a;
+      background: #fafafa;
+    }
+    
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+    
+    /* Navigation */
     .back-link {
       text-decoration: none;
       color: #666;
       font-size: 14px;
-      margin-bottom: 40px;
+      margin-bottom: 60px;
       display: inline-block;
+      transition: color 0.3s ease;
     }
     
     .back-link:hover {
       color: #000;
     }
     
+    /* Header */
+    .project-header {
+      margin-bottom: 80px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
     h1 {
-      margin-bottom: 20px;
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 24px;
+      letter-spacing: -0.5px;
     }
     
     .project-meta {
       font-size: 14px;
       color: #666;
-      margin: 5px 0;
-    }
-    
-    .project-content {
-      margin-top: 40px;
       line-height: 1.6;
+    }
+    
+    .project-meta span {
+      display: inline-block;
+      margin-right: 24px;
+    }
+    
+    /* Sections */
+    .section {
+      margin-bottom: 64px;
+    }
+    
+    .section-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #999;
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+    
+    .section-content {
       font-size: 16px;
+      color: #333;
+      line-height: 1.8;
     }
     
-    .project-images {
-      margin-top: 40px;
+    .section-content p {
+      margin-bottom: 16px;
     }
     
-    .project-images img {
-      max-width: 100%;
+    .section-content p:last-child {
+      margin-bottom: 0;
+    }
+    
+    /* Images */
+    .section-images {
+      margin-top: 24px;
+    }
+    
+    .section-images img {
+      width: 100%;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
+      border-radius: 2px;
+    }
+    
+    .section-images figcaption {
+      font-size: 13px;
+      color: #999;
+      text-align: center;
+      margin-top: -8px;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    
+    /* Lists */
+    .section-content ul {
+      margin: 16px 0;
+      padding-left: 20px;
+    }
+    
+    .section-content li {
+      margin-bottom: 8px;
+    }
+    
+    /* Blockquote */
+    blockquote {
+      border-left: 3px solid #ddd;
+      padding-left: 20px;
+      margin: 24px 0;
+      color: #666;
+      font-style: italic;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        padding: 60px 24px 80px;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      .project-meta span {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 4px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<a href="../../work.html" class="back-link">← Back to Work</a>
+<div class="container">
+  
+  <a href="../../work.html" class="back-link">← Back to Work</a>
 
-<h1>Project 01</h1>
-<div class="project-meta">Year</div>
-<div class="project-meta">Category</div>
+  <!-- Project Header -->
+  <header class="project-header">
+    <h1>Project Title</h1>
+    <div class="project-meta">
+      <span><strong>Year:</strong> 2025</span>
+      <span><strong>Type:</strong> Research / Design</span>
+      <span><strong>Duration:</strong> 3 months</span>
+    </div>
+  </header>
 
-<div class="project-content">
-  <p>Add your project description here.</p>
-</div>
+  <!-- Context -->
+  <section class="section">
+    <h2 class="section-title">Context</h2>
+    <div class="section-content">
+      <p>Describe the background and circumstances that led to this project. What was the situation? What problem space were you exploring?</p>
+      <p>Include relevant historical, cultural, or industry context that frames your work.</p>
+    </div>
+  </section>
 
-<div class="project-images">
-  <!-- <img src="image1.jpg" alt="Project image"> -->
-  <!-- <img src="image2.jpg" alt="Project image"> -->
+  <!-- Concept -->
+  <section class="section">
+    <h2 class="section-title">Concept</h2>
+    <div class="section-content">
+      <p>What is the core idea or hypothesis driving this project? What questions were you trying to answer?</p>
+      <p>Explain your conceptual framework and theoretical foundations.</p>
+      
+      <div class="section-images">
+        <!-- <figure>
+          <img src="images/concept-diagram.jpg" alt="Conceptual diagram">
+          <figcaption>Fig 1. Conceptual framework</figcaption>
+        </figure> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section">
+    <h2 class="section-title">Process</h2>
+    <div class="section-content">
+      <p>Document your research and design process. How did you approach the problem?</p>
+      
+      <p><strong>Methods used:</strong></p>
+      <ul>
+        <li>Research method 1</li>
+        <li>Design exploration 2</li>
+        <li>Testing and iteration 3</li>
+      </ul>
+      
+      <p>Describe key decisions, pivots, and discoveries along the way.</p>
+      
+      <div class="section-images">
+        <!-- <figure>
+          <img src="images/process-1.jpg" alt="Process image">
+          <figcaption>Fig 2. Early explorations</figcaption>
+        </figure> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcome -->
+  <section class="section">
+    <h2 class="section-title">Outcome</h2>
+    <div class="section-content">
+      <p>What did you create or discover? Present the final result or findings.</p>
+      <p>Include both tangible outputs (artifacts, products, systems) and intangible outcomes (insights, frameworks, knowledge).</p>
+      
+      <div class="section-images">
+        <!-- <figure>
+          <img src="images/outcome-1.jpg" alt="Final outcome">
+          <figcaption>Fig 3. Final prototype</figcaption>
+        </figure> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="section">
+    <h2 class="section-title">Reflection</h2>
+    <div class="section-content">
+      <p>What did you learn from this project? What worked well, and what would you do differently?</p>
+      <p>How does this work contribute to your broader practice or the field?</p>
+      
+      <blockquote>
+        "A key insight or quote that captures the essence of your learning."
+      </blockquote>
+      
+      <p>Consider implications for future work and open questions that remain.</p>
+    </div>
+  </section>
+
 </div>
 
 </body>
