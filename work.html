@@ -6,15 +6,88 @@
     body {
       font-family: Helvetica, Arial, sans-serif;
       padding: 80px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+      margin-bottom: 60px;
+    }
+    
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .project-item {
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .project-item:last-child {
+      border-bottom: none;
+    }
+    
+    .project-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: opacity 0.2s;
+    }
+    
+    .project-link:hover {
+      opacity: 0.6;
+    }
+    
+    .project-name {
+      font-size: 24px;
+      font-weight: normal;
+      margin: 0 0 10px 0;
+    }
+    
+    .project-meta {
+      font-size: 14px;
+      color: #666;
+      margin: 5px 0;
+    }
+    
+    .project-description {
+      font-size: 16px;
+      color: #333;
+      margin: 15px 0 0 0;
+      line-height: 1.5;
     }
   </style>
 </head>
 
 <body>
 
-<h1>Work</h1>
+<h1>档案目录</h1>
 
-<p>Coming soon.</p>
+<ul class="project-list">
+  
+  <li class="project-item">
+    <a href="project.html" class="project-link">
+      <h2 class="project-name">Project Name</h2>
+      <div class="project-meta">2026</div>
+      <div class="project-meta">Digital Media</div>
+      <p class="project-description">A short description line about the project goes here.</p>
+    </a>
+  </li>
+  
+  <li class="project-item">
+    <a href="project2.html" class="project-link">
+      <h2 class="project-name">Another Project</h2>
+      <div class="project-meta">2025</div>
+      <div class="project-meta">Installation</div>
+      <p class="project-description">Brief description of this project.</p>
+    </a>
+  </li>
+  
+  <!-- Add more projects here -->
+  
+</ul>
 
 </body>
 </html>
